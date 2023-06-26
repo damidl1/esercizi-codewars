@@ -33,7 +33,6 @@ console.log(booleanToString(false) === "false");
 
 // operazioni matematiche
 
-
 function basicOp(operation, value1, value2) {
 
     if (operation === "+") {
@@ -55,3 +54,27 @@ console.log(basicOp("+", 4, 7) === 11);
 console.log(basicOp("-", 15, 18) === -3);
 console.log(basicOp("*", 5, 5) === 25);
 console.log(basicOp("/", 49, 7) === 7);
+
+
+
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return 'EVEN';
+    } else {
+        return 'ODD';
+    }
+}
+
+console.log(evenOrOdd(4));
+console.log(evenOrOdd(7));
+console.log(evenOrOdd(10));
+console.log(evenOrOdd(13));
+
+
+function joinWordsIntoSentence(words) {          // esempio funzione che prende un array di parole e le unisce in una frase
+    return words.join(" ");
+}
+
+const wordArray = ["Questo", "è", "un", "esempio", "di", "frase"];
+const sentence = joinWordsIntoSentence(wordArray);
+console.log(sentence);  // console log output = Questo è un esempio di frase
