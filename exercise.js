@@ -85,7 +85,7 @@
 // ESERCIZI RICORSIONE E ALTRI ESERCIZI CODEWARS ---------------------------------------
 
 
-function countBs(str) {
+function countBs(str) {                              // Funzione per contare quante B maiuscole ci sono in una stringa
 
     let accumulator = 0;
     for (let i = 0; i < str.length; i++) {
@@ -98,10 +98,10 @@ function countBs(str) {
   
   }
   
-  console.log(countBs("BBC"));
+  console.log("countBs", countBs("BBC"));
   
   
-  function countLetters(str, letter) {
+  function countLetters(str, letter) {                 // funzione per contare il numero di una lettera in una stringa (quante volte è presente ad esempio la C)
   
     let accumulator = 0;
     for (let i = 0; i < str.length; i++) {
@@ -115,9 +115,9 @@ function countBs(str) {
   
   }
   
-  console.log(countLetters("BBCCCCCCCCCC", "C"));
+  console.log("countLetters", countLetters("BBCCCCCCCCCC", "C"));
   
-  function isIsogram(str) {
+  function isIsogram(str) {                     // funzione per vedere se una parola è un istogramma
     lowerString = str.toLowerCase();
     for (let i = 0; i < lowerString.length; i++) {
       for (let j = i + 1; j < lowerString.length; j++) {
@@ -129,4 +129,44 @@ function countBs(str) {
     return true;
   }
   
-  console.log(isIsogram("cappello"));
+  console.log("isIstogram", isIsogram("cappello"));
+
+
+
+
+
+    
+  function basicOp(operation, v1, v2) {
+    if (operation === '+') {
+        return v1 + v2;
+    } else if (operation === '-') {
+        return v1 - v2;
+    } else if (operation === '*') {
+        return v1 * v2;
+    } 
+    return v1 / v2;
+  }
+
+  console.log(basicOp('+', 10, 5) === 15);
+  console.log(basicOp('-', 40, 20) === 20);
+  console.log(basicOp('*', 5, 5) === 25);
+  console.log(basicOp('/', 49, 7) === 7);
+
+
+
+  
+  let currentLightState = "green";
+
+  function updateLight(lightState) {
+    currentLightState = lightState;
+
+    if (currentLightState === "green") {
+      return "yellow";
+    } else if (currentLightState === "yellow") {
+      return "red";
+    } else if (currentLightState === "red") {
+      return "green";
+    }
+  } 
+  
+  console.log(updateLight("green"));
