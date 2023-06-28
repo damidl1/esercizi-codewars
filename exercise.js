@@ -200,3 +200,49 @@ function stringToNumber(string){
 
 console.log(stringToNumber('12344'));
 
+
+
+function hoopCount (n) {
+  if (n >= 10) {
+    return 'Great, now move on to tricks'
+  } else {
+    return 'Keep at it until you get it'
+  }
+}
+console.log(hoopCount(15));
+console.log(hoopCount(7));
+
+
+function opposite(number) {
+  if (number > 0) {
+    return -1 * number;
+  } else if (number < 0) {
+    return -1 * number;
+  } else {
+    return 0;
+  }
+}
+
+console.log(opposite(8));
+console.log(opposite(-5));
+
+
+
+
+
+function positiveSum(array) {
+  
+  let sum = 0;
+  tempArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    
+    if (element >= 0) {
+      sum += element;
+    }
+  }
+  return sum;
+}
+
+console.log(positiveSum([10, 20, -1, -5, 10]));
