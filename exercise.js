@@ -170,3 +170,33 @@ function countBs(str) {                              // Funzione per contare qua
   } 
   
   console.log(updateLight("green"));
+
+
+
+
+function removeAllSpaces(str){
+//   const noSpace = str.replace(/ /g, '');   //cerca lo spazio / / e lo cerca global g = rimpiazza qualsiasi spazio con una stringa vuota
+//   return noSpace;
+     const wordArray = str.split(' ');  // split spezza e spezza dove dico io
+     const nospace = wordArray.join(''); // se metto join e stringa vuota appiccica la stringa senza scrivere altro
+     return nospace;
+}
+
+console.log('removeAllSpaces', removeAllSpaces('pippo') === 'pippo');
+console.log('removeAllSpaces', removeAllSpaces('') === '');
+console.log('removeAllSpaces', removeAllSpaces('le mutande di mia nonna') === 'lemutandedimianonna');
+
+
+
+function stringToNumber(string){
+   let number = Number(string);
+    if (string === number) {
+    return string;
+   } else {
+    return number;
+   }
+    
+  }
+
+console.log(stringToNumber('12344'));
+
