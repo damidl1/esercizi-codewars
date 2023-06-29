@@ -335,3 +335,41 @@ function doubleChar(str) {
 console.log(doubleChar("Hello world"));
 
 
+
+
+
+function booleanToString(b){
+  if (b === true) {
+    return 'true';
+  } 
+  return 'false';
+}
+
+console.log(booleanToString(true));
+
+
+
+// function testEven(n) {
+//  if (n % 2 === 0) {
+//   return true;
+//  }
+//  return false;
+// }
+
+function testEven(n) {
+  return n % 2 === 0 ? true : false;
+}
+
+console.log(testEven(15));
+
+
+function boolToWord(bool){
+// if (bool === true) {
+//   return 'yes';
+//  }
+//  return 'no';
+
+return bool ? 'Yes' : 'No';
+}
+
+console.log(boolToWord(false));
