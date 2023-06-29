@@ -319,3 +319,19 @@ return acc;
 }
 
 console.log(squareSum([1,2,2]));
+
+
+
+function doubleChar(str) {
+  let accumulator = "";
+  
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    accumulator += char + char;
+  }
+  return accumulator;
+}
+
+console.log(doubleChar("Hello world"));
+
+
