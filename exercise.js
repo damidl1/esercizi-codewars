@@ -280,10 +280,42 @@ function accum(s) {
 }
 
 
-const accum = (s) => [...s].reduce((a, c, i, o) => a + c.toUpperCase()         // [...s] trasformami una string in un array di caratteri
-                                                   +c.toLowerCase().repeat(i)
-                                                   + (i !== o.length - 1 ? '-' : ''), '');        
+//const accum = (s) => [...s].reduce((a, c, i, o) => a + c.toUpperCase()         // [...s] trasformami una string in un array di caratteri
+//                                                   +c.toLowerCase().repeat(i)
+//                                                   + (i !== o.length - 1 ? '-' : ''), '');        
 
 
+
+                                                   
 console.log(accum('damiano'));
 
+//per [1, 2, 3], restituisci 9 perché 1 quadro + 2 quadro + 2 quadro = 9
+
+// function squareSum(numbers){
+//   let acc = 0;
+
+//   for (number of numbers) {
+//   
+
+//     acc += element**2;
+    
+//   }
+
+//   return acc;
+// }
+// console.log(squareSum(2));
+
+function squareSum(numbers){
+let acc = 0
+
+for (let i = 0; i < numbers.length; i++) {
+  const element = numbers[i];
+  
+  let elementPow = element**2;
+  acc += elementPow;
+
+}
+return acc;
+}
+
+console.log(squareSum([1,2,2]));
