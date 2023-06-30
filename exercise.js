@@ -373,3 +373,12 @@ return bool ? 'Yes' : 'No';
 }
 
 console.log(boolToWord(false));
+
+
+
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 === 0 && flower2 % 3 === 0) {
+    return true;
+  }
+  return false;
+}
