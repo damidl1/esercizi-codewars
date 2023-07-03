@@ -376,9 +376,57 @@ console.log(boolToWord(false));
 
 
 
+
 function lovefunc(flower1, flower2) {
   if (flower1 % 2 === 0 && flower2 % 3 === 0) {
     return true;
   }
   return false;
 }
+
+
+function reverseNumber(n) {
+  const nString = n + '';
+  // const nStringArray = [...nstring];  //metodo per spezzare stringa in array di caratteri
+  const nStringArray = nString.split(''); // altro metodo per spezzare una stringa di caratteri
+  const reversedNStringArray = nStringArray.reverse();
+  
+  reversedNArray = reversedNStringArray.map((e) => parseInt(e));
+  return reversedNArray;
+}
+
+console.log(reverseNumber(9234));
+
+
+
+
+// Uguaglianze -------------------------
+
+console.log(3 === 3);  // true
+
+let pippo = 5;
+let pluto = 5;
+
+console.log(pippo === pluto);   //true
+
+
+let qui = 'paperino';
+let quo = 'paperino';
+
+console.log(qui === quo)  // true
+
+
+
+const student1 = {name: 'Manuela', yob: 1988};
+const student2 = {name: 'Luca', yob: 1999};
+const student3 = {name: 'Manuela', yob: 1988};
+
+console.log(student1 === student2); // false
+console.log(student1 === student3) // false
+
+const student4 = student1;
+
+console.log(student1 === student4); // true
+
+
+// -----------------------------------
